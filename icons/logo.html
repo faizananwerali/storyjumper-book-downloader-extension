@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryJumper - Logo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .logo-container {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+            border-radius: 50px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(255, 107, 107, 0.3);
+        }
+
+        .logo::before {
+            content: '';
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+
+        .book-icon {
+            width: 80px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .book-icon::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 45px;
+            background: #ff6b6b;
+            border-radius: 4px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .book-pages {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            width: 50px;
+            height: 35px;
+            background: linear-gradient(to right, #fff 0%, #f8f8f8 100%);
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .book-pages::before,
+        .book-pages::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 1px;
+            background: #ddd;
+            left: 5px;
+        }
+
+        .book-pages::before {
+            top: 12px;
+        }
+
+        .book-pages::after {
+            top: 20px;
+        }
+
+        .download-arrow {
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            width: 24px;
+            height: 24px;
+            background: #4ecdc4;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .download-arrow::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 8px solid white;
+        }
+
+        .logo-text {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .logo-subtext {
+            font-size: 10px;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .shine {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, rgba(255,255,255,0.8), transparent);
+            border-radius: 50%;
+            filter: blur(10px);
+        }
+
+        .sparkles {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            width: 8px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            animation: sparkle 2s infinite alternate;
+        }
+
+        .sparkles::before,
+        .sparkles::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            animation: sparkle 2s infinite alternate;
+        }
+
+        .sparkles::before {
+            top: 20px;
+            left: -10px;
+            animation-delay: 0.5s;
+        }
+
+        .sparkles::after {
+            top: -15px;
+            left: 15px;
+            animation-delay: 1s;
+        }
+
+        @keyframes sparkle {
+            0% { opacity: 0.3; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo">
+            <div class="shine"></div>
+            <div class="sparkles"></div>
+            <div class="logo-content">
+                <div class="book-icon">
+                    <div class="book-pages"></div>
+                    <div class="download-arrow"></div>
+                </div>
+                <div class="logo-text">StoryJumper</div>
+                <div class="logo-subtext">Downloader</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

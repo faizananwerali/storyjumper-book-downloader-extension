@@ -1,0 +1,2 @@
+chrome.runtime.onMessage.addListener(((r,e,a)=>{if("capture"===r.message)return chrome.tabs.captureVisibleTab(e.tab.windowId,{format:r.format||"png",quality:r.quality||1},(r=>{chrome.runtime.lastError?(console.error("Error capturing tab:",chrome.runtime.lastError),a({error:chrome.runtime.lastError.message})):a({image:r})})),!0}));
+//# sourceMappingURL=background.js.map

@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.97bbd742.css",
+    "main.js": "/static/js/main.js",
+    "background.js": "/static/js/background.js",
+    "content.css": "/static/css/content.3b90c0aa.css",
+    "content.js": "/static/js/content.js",
+    "static/js/404.js": "/static/js/404.js",
+    "static/js/379.js": "/static/js/379.js",
+    "icons/icon-512.png": "/icons/icon-512.png",
+    "icons/logo.png": "/icons/logo.png",
+    "icons/icon-256.png": "/icons/icon-256.png",
+    "images/no_results.svg": "/images/no_results.svg",
+    "icons/icon-128.png": "/icons/icon-128.png",
+    "icons/logo.html": "/icons/logo.html",
+    "icons/icon-48.png": "/icons/icon-48.png",
+    "icons/icon-32.png": "/icons/icon-32.png",
+    "index.html": "/index.html",
+    "icons/icon-16.png": "/icons/icon-16.png",
+    "main.css.map": "/static/css/main.css.map",
+    "main.js.map": "/static/js/main.js.map",
+    "main.97bbd742.css.map": "/static/css/main.97bbd742.css.map",
+    "background.js.map": "/static/js/background.js.map",
+    "content.css.map": "/static/css/content.css.map",
+    "content.js.map": "/static/js/content.js.map",
+    "content.3b90c0aa.css.map": "/static/css/content.3b90c0aa.css.map",
+    "404.js.map": "/static/js/404.js.map",
+    "379.js.map": "/static/js/379.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.css",
+    "static/js/main.js",
+    "static/css/main.97bbd742.css"
+  ]
+}
